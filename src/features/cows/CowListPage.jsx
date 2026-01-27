@@ -6,7 +6,10 @@ import { Link } from 'react-router-dom';
 
 export default function CowListPage() {
   const dispatch = useDispatch();
-  const cows = useSelector(state => state.cows);
+  const cows = useSelector(state => {
+    return state.cows;
+  });
+  console.log("🚀 ~ CowListPage ~ cows:", cows)
 
   useEffect(() => {
     dispatch(fetchCows());
