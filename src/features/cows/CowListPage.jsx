@@ -9,12 +9,11 @@ export default function CowListPage() {
   const cows = useSelector(state => {
     return state.cows;
   });
-  console.log("🚀 ~ CowListPage ~ cows:", cows)
-
+  
   useEffect(() => {
     dispatch(fetchCows());
   }, [dispatch]);
-
+  
   return (
     <div className="page-wrapper">
       <div className="page-card">
