@@ -23,7 +23,7 @@ export default function LoginPage() {
 
   return (
     <div>
-      <h3>Login</h3>
+      <h3>Login </h3>
 
       <input
         placeholder="Email"
